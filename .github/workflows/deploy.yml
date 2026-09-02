@@ -45,6 +45,7 @@ jobs:
         run: |
           if [ -f public/latest.json ]; then cp public/latest.json dist/latest.json; fi
           if [ -d public/archive ]; then cp -R public/archive dist/archive; fi
+          if [ -f public/game-plan.html ]; then cp public/game-plan.html dist/game-plan.html; fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
